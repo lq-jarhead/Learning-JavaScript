@@ -30,13 +30,14 @@
 // alert(total);
 
 function showPic(whicepic) {
-	var source = whicepic.getAttribute('href');
+	var source = whicepic.getAttribute('href');//获取属性名href的变量值
 	var placeholder = document.getElementById('placeholder');
-	placeholder.setAttribute('src',source);
-	var text = whicepic.getAttribute('title');
-	var description = document.getElementById('description');
-	//注意这里的赋值，var现在的作用体现出来了
-	description.firstChild.nodeValue = text;
+	placeholder.setAttribute('src',source);//获取一个元素并改变其src变量值/属性值
+
+	var text = whicepic.getAttribute('title');//获取元素属性名title的属性值
+	var description = document.getElementById('description');//获取id=description的元素节点
+	
+	description.firstChild.nodeValue = text;//获取description元素的文本节点text的值并赋予新的属性值
 }
 
 function popUp(winURL) {
