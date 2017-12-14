@@ -1,0 +1,32 @@
+body {
+	font-family: 'Arial','serif'
+	color: #333;
+	background-color: #ccc;
+	margin: 1em 20%;
+}
+h1 {
+	color: #333;
+	background-color: transparent;
+}
+a {
+	color: #c60;
+	background-color: transparent;
+	font-family: bold;
+
+}
+ol {
+	padding: ;
+}
+li {
+	float: left;
+	padding: 1em;
+	list-style: none;
+}
+img {
+	display: block;
+	clear: both;
+}
+#window {
+	text-decoration: ;
+	color: green;
+}

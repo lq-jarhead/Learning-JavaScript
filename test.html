@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping list.</title>
+	<link rel="stylesheet" type="text/css" href="test.css">
+</head>
+<body>
+	<h1>What to buy</h1>
+	<p> Don't forget to buy these stuff.</p>
+	<ol>
+		<li>
+			<a href="images/1.jpg" title="A pic of beans" onclick="showPic(this); return false;"> A tin of beans</a>
+		</li>
+		<li class="sale">
+			<a href="images/2.jpg" title="A pic of Chesse" onclick="showPic(this); return false;"> Chesse</a></li>
+		<li class="sale important">Milk</li>
+
+	</ol>
+	<img id="placeholder" src="images/all.jpg" alt="my all" />
+	<p id="description"> Choose an image. </p>
+	<a  id='window' href='http://www.baidu.com' onclick="popUp(this.href); return false">click me for a new window.</a>
+	<p>The <abbr title="World Wide Web">W3C</abbr> defines the <abbr>DOM</abbr> as： </p>
+	<script type="text/javascript" src="test.js"></script>
+</body>
+</html>

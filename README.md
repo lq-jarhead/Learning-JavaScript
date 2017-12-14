@@ -1,2 +1,6 @@
-# skill_for-test
-The repository is just for teset. It is useless.
+### 须知 ###
+
+1. 本仓库主要是辅助自己学习JavaScript。
+2. 主要参考《JavaScript DOM编程》一书，这里提交的代码主要是跟随者章节。
+3. 有关代码和章节的对应关系，请注意commit的信息。
+4. 仅供自己学习使用。

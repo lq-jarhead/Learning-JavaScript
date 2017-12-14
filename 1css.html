@@ -1,0 +1,67 @@
+css
+1基本构造：
+css对样式的作用描述位于<head></head>>之间的
+每个描述都是单独的
+#难点是记住常用属性用词及其描述
+<head>	<title>My Shop</title>
+	<meta charset="UTF-8">
+		<style type="text/css">/*从这里开始*/
+			body {							/*基本规则：元素、对象 { 属性：特殊值; }*/
+				font-family: Verdana,Geneva,Arial,sans-serif;/*会依次将body元素匹配第一个，若是第一个找不到就第二个，，，最后就是san*/
+				background-color: #d3b48c;/*十六进制，两位两位分别是red，green，blue，最大就是ff了*/
+				margin-left:20%;/*左空白*/
+				margin-right:20%;
+				border: 5px dotted gray;/*外框、边界:5像素 点样式 灰色*/
+				padding: 10px 10px 10px 10px;/*衬料：*/
+				font-family: serif/sans-serif/monospace/cursive/fantasy;/*字体家族：有衬线（常做报纸印刷）/无衬线-用作显示清晰/字母宽度相同-常做代码/连体的-手写/想象字体-装饰性字体*/
+				font-family: Verdana/Geneva/Aria;/*Verdana是一套无衬线字体，它在小字上有结构清晰端整、阅读辨识容易等高品质表现，微软/日内瓦字体，苹果/常用在微软和苹果上*/
+				color: black;/*可以代替上面的background-color*/
+				line-height: 1.6em/*行距是普通行距的1.6倍*/
+			}
+			h1,h2{
+				font-family: sans-serif;/*#无衬线字体 ，sans无*/
+				font-size:13px;
+				font-weight: lighter/normal/bold/bolder;/*字体粗细：细的/普通/加粗/好粗*/
+				text-decoration:underline/none/overline/line-through/blink;/*文本装饰：下划线/无/上划线/穿插线/闪烁，，几乎不用。*/
+				font-size: small;/*small通常是12px,xx-small,x-small,small,large,x-large,xx-large一个级别是20%*/
+				font-style: italic;/*斜体*/
+
+
+
+			}
+			h1{
+				color: gray;#对比上面的h1,h2这个可以额外添加，最终作用是重叠起来呈现。
+				font-size: 150%;/*在父元素的1.5倍*/
+				font-size: 1.4em;/*是父元素的1。4倍*/
+			}
+		</style>
+</head>
+<body>
+2.外部链接样式css，
+将被链接的css样式单独保存为.css文件，比如loung_myshop.css，放在某个文件夹内
+loung_myshop.css:
+		body{
+			background-color: marron;
+			}
+		h2{
+			font-family:sans-serif;
+			color:gray;
+			}
+		h1 {
+			font-family: sans-serif;
+			color: red;
+			border-bottom: 2px solid black;
+		}
+		p {
+			color:black;
+			}
+基本形式： 将 <link type="text/css" rel="stylesheet" href="../loungage.css" />作为独立元素插入到<head></head>之间
+	<head>	<title>My Shop</title>
+		<link type="text/css" rel="stylesheet" href="lounge_myshop.css" />
+
+	</head>
+相比宿主：作用是将其他文件里面的css格式链接到自己文本中，减少不必要的工作量。链接的仅仅是css规则，没有其他任何东东。
+</body>>
+<p class ="the name of a text  name by yourself"></p>
+
+3.css
